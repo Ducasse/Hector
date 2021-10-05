@@ -35,7 +35,10 @@ Now you can also fix all the method that are not consistently categorized.
 HCProtocolAnalyzer new fixInconsistenciesOf: #printOn: toBeInProtocol: 'printing'		
 ```
 
+## Todo
 
+- make the analyser and fixer working on list of packages and not the complete environment. 
+For this we can introduce onPackagesNamed: {} and also onFullEnvironment.
 
 
 
