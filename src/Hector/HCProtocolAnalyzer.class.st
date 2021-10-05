@@ -6,7 +6,7 @@ I'm a tool to collect some analyses on selectors categorisation.
 The following shows that in the image in which this comment was written most of the printOn: messages are all categorized in printing. 
 
 ```			
-ProtocolAnalyzer new statisticFor: #printOn:  
+HCProtocolAnalyzer new statisticFor: #printOn:  
 
 >>> {377->#printing. 3->#accessing. 1->#ui. 1->#private. 1->#transmitting}
 ```

@@ -8,3 +8,28 @@ Trait {
 	],
 	#category : #Hector
 }
+
+{ #category : #accessing }
+THCEnvironmentFragment >> allClasses [
+
+	^ environment allClasses
+]
+
+{ #category : #accessing }
+THCEnvironmentFragment >> allClassesAndTraits [
+
+	^ environment allClassesAndTraits
+]
+
+{ #category : #accessing }
+THCEnvironmentFragment >> environment: anEnvironment [
+
+	environment := anEnvironment
+]
+
+{ #category : #initialization }
+THCEnvironmentFragment >> initialize [
+
+	super initialize.
+	environment := Smalltalk globals
+]
