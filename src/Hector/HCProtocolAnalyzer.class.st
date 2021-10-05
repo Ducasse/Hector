@@ -14,7 +14,7 @@ HCProtocolAnalyzer new statisticFor: #printOn:
 Now for initialize we see that it is not the case. 
 
 ```  
-ProtocolAnalyzer new statisticFor: #initialize  {
+HCProtocolAnalyzer new statisticFor: #initialize  {
 
 >>> {867->#initialization. 85->#'initialize-release'. 12->#'as yet unclassified'. 8->#initializing. 6->#accessing. 3->#'instance initalization'. 1->#'initalize-release'. 1->#testing. 1->#'class initialization'. 1->#'updating screen'. 1->#actions. 1->#drawing. 1->#displaying. 1->#tests. 1->#shout}
 ```
@@ -22,16 +22,17 @@ ProtocolAnalyzer new statisticFor: #initialize  {
 ## Miscategorized methods
 
 Now we can  get a list of all miscategorized method definitions.
-  
-ProtocolAnalyzer new findInconsistenciesForASelector: #initialize thatIsNotInProtocol: 'initialization'
-]]]
+
+```
+HCProtocolAnalyzer new findInconsistenciesForASelector: #initialize thatIsNotInProtocol: 'initialization'
+```
 
 ## Fixing miscategorized methods 
 
 Now you can also fix all the method that are not consistently categorized.
 
 ``` 
-ProtocolAnalyzer new fixInconsistenciesOf: #printOn: toBeInProtocol: 'printing'		
+HCProtocolAnalyzer new fixInconsistenciesOf: #printOn: toBeInProtocol: 'printing'		
 ```
 
 
